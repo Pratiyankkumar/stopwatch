@@ -1,0 +1,108 @@
+body{
+  color: #FEA00A ;
+  font-family: Noto Sans;
+}
+
+.stopwatch-container{
+  background-color: black;
+  width: 450px;
+  height: 450px;
+  border: 0 solid transparent;
+  border-radius: 225px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 400px) {
+  .stopwatch-container{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 0 solid transparent;
+    border-radius: 225px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+}
+.hour-timer,
+.minutes-timer,
+.seconds-timer{
+  font-size: 90px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+@media (max-width: 400px) {
+  .hour-timer,
+  .minutes-timer,
+  .seconds-timer{
+    margin-top: 95px;
+    font-size: 60px;
+    margin-left: -5px;
+    margin-bottom: 0;
+  }
+}
+.hour{
+  font-weight: bold;
+  margin-top: 0;
+  color: white;
+}
+@media (max-width: 400px) {
+  .hour{
+    margin-left: -5px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0;
+    color: white;
+  }
+}
+.hour-container,
+.minutes-container,
+.seconds-container{
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .hour-container,
+  .minutes-container,
+  .seconds-container{
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hour-container{
+  margin-left: 65px;
+}
+@media (max-width: 400px) {
+  .minutes-timer{
+    margin-left: 8px;
+  }
+  
+}
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  margin: 30px auto;
+  justify-content: space-between;
+}
+.start-button,
+.reset-button{
+  padding: 8px 18px;
+  background-color: rgba(74, 75, 131, 255);
+  color: white;
+  font-family: Noto Sans;
+  font-size: 17px;
+  font-weight: bold;
+  border: 0 solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+}
